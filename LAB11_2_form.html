@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Esercizio 11.2 </title>
+        <meta name="author" content="Paolo Aimar" >
+        <script type="application/javascript">
+            "use strict";
+            function ValidaForm(testo){
+                "use strict";
+				var re = /^\d+$/;			
+                if (re.test) return true;
+                window.alert("Errore nell'inserimento del costo");
+                return false;}                
+        </script>
+    </head>
+    <body>
+        <h1>Esercizio 11.2</h1>
+        <form name="f" method="POST" action="LAB11_2.php"  onSubmit="return ValidaForm(costo.value)">
+             <p>Inserire il costo:</p> 
+             <p>Costo: <input type="text" name="costo"></p>
+             <p><input type="reset"><input type="submit"></p>
+         </form>
+    </body>
+</html>
